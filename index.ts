@@ -31,7 +31,7 @@ api
     "type": "social-network",
     "sender_username": "iamdelta48",
     "receiver_username": "jrsarath48",
-    "receiver_name": "Sarath Singh",
+    // "receiver_name": "Sarath Singh",
     "receiver_identity": "twitter",
    })
   .then(response => {
@@ -43,5 +43,5 @@ api
   .catch(error => {
     // console.error('headers', error.response?.headers);
     console.error('data', error.response?.data);
-    // console.error('error', error);
+    console.error('error', error);
   });
