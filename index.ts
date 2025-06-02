@@ -26,7 +26,7 @@ const api = withPaymentInterceptor(
 
 api
   .post(endpointPath, { 
-    "amount": 1,
+    "amount": 0.1,
     "currency": "USDC",
     "type": "social-network",
     "sender_username": "iamdelta48",
@@ -41,6 +41,7 @@ api
     console.log(paymentResponse);
   })
   .catch(error => {
-    console.error('headers', error.response?.headers);
-    console.error('error', error.response?.data);
+    // console.error('headers', error.response?.headers);
+    console.error('data', error.response?.data);
+    // console.error('error', error);
   });
