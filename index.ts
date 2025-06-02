@@ -30,8 +30,6 @@ api
     "currency": "USDC",
     "type": "social-network",
     "sender_username": "iamdelta48",
-    "sender_name": "Sarath Singh",
-    "sender_identity": "twitter",
     "receiver_username": "jrsarath48",
     "receiver_name": "Sarath Singh",
     "receiver_identity": "twitter",
