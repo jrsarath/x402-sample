@@ -35,11 +35,12 @@ api
     "receiver_identity": "twitter",
    })
   .then(response => {
-    console.log(response.data);
+    console.log('response', response.data);
 
     const paymentResponse = decodeXPaymentResponse(response.headers["x-payment-response"]);
     console.log(paymentResponse);
   })
   .catch(error => {
-    console.error(error.response?.data);
+    console.error('headers', error.response?.headers);
+    console.error('error', error.response?.data);
   });
